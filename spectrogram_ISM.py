@@ -16,7 +16,7 @@ import shutil
 # 2. 설정
 
 # 데이터 경로 설정
-RAW_DATA_PATH = './1st_test'    # 원본 데이터 위치
+RAW_DATA_PATH = './ism'    # 원본 데이터 위치
 OUT_BASE_PATH = './spectrogram_for_learning'  # 변환한 이미지 파일을 저장할 장소
 TEST_FILE_PATH = './test_sensor_to_server/ISM'
 os.makedirs(TEST_FILE_PATH, exist_ok=True)

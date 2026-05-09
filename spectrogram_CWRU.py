@@ -19,10 +19,8 @@ import shutil
 # 데이터 경로 설정
 CWRU_DATA_PATH = './cwru'        # CWRU 데이터셋 경로
 OUT_BASE_PATH = './spectrogram_for_learning'   # 스펙트로그램 저장할 경로
-###
 TEST_FILE_PATH = './test_sensor_to_server/CWRU' # 테스트용 원본 파일 위치
 os.makedirs(TEST_FILE_PATH, exist_ok=True)
-###
 
 # 샘플링 속도 설정(원본 20KHz에서 12KHz로 변환)
 SAMPLING_RATE = 12000           # 원본 주파수값

@@ -4,7 +4,7 @@ import os
 import matplotlib.pyplot as plt
 
 # 1. 데이터 경로 설정
-data_path = "./1st_test"
+data_path = "./pre_test"
 
 # files = sorted(os.listdir(data_path))
 
@@ -21,12 +21,6 @@ rms_list = []
 sample_step = 10
 
 print(f"분석 시작 (총 {len(files)}개 파일 중 {len(files)//sample_step}개 샘플링)...")
-
-# # 2. 첫 번째 파일만 먼저 테스트 출력
-# test_file = os.path.join(data_path, files[0])
-# test_df = pd.read_csv(test_file, sep='\t', header=None)
-# print("첫 번째 파일 데이터 샘플:")
-# print(test_df.head()) # 데이터가 숫자로 잘 나오는지 확인
 
 # 2. 모든 파일을 순회하며 RMS 계산 (데이터가 많으므로 샘플링해서 확인 가능)
 # for file in files:
